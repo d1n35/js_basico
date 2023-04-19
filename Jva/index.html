@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/scripts.js">
+        function clique_botao(){
+            alert("Seja bem vindo!");
+        }
+    </script>
+
+    <title>Aula de JS</title>
+    
+
+</head>
+
+<body>
+    
+
+    <p id="alpha">Mudando as propriedades de fonte via Java Script</p>
+
+    <script>
+        function youFunction() {
+            document.getElementById("alpha").style.fontSize = "25px";
+            document.getElementById("alpha").style.color = "red";
+            document.getElementById("alpha").style.backgroundColor = "yellow";
+        }
+    </script>
+
+    <button type="button" onclick="youFunction()">Clique Aqui!</button>
+<br>
+<hr>
+<br>
+    <p>Um novo jeito de implementar o "ondblclick".</p>
+    <p id="demo" ondblclick="myFunction()">Clique duas vezes nesse parágrafo!</p>
+    <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Ops! Você clicou duas vezes aqui!";
+        }
+    </script>
+<br>
+<hr>
+<br>
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">Clique neste texto e mantenha-o pressionado. Repare que o texto mudará da cor preta para vermelha, e, ao soltar, o texto ficará verde!</p>
+    
+
+    <script>
+        function mouseDown() {
+            document.getElementById("myP").style.color = "red";
+        }
+
+        function mouseUp() {
+            document.getElementById("myP").style.color = "green";
+        }
+    </script>
+
+<br>
+<hr>
+<br>
+
+<a href="soma.html">Calculadora de soma</a>
+
+</body>
+</html>

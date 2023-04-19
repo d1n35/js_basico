@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+        function somador() {
+            document.getElementById('resultado_soma').value = parseFloat(document.getElementById('numero1').value) +
+            parseFloat(document.getElementById('numero2').value);
+
+            document.getElementById("resultado_soma").style.color = "red";
+            document.getElementById("resultado_soma").style.backgroundColor = "yellow";
+        }
+    </script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <a href="index.html">Voltar ao início</a>
+    <br>
+    <hr>
+
+
+    <form name="meu_form">
+
+        <h1>Entre com os números a serem somados</h1>
+
+        <p>
+            <label for="nome">Numero 1:</label>
+            <input type="text" id="numero1" placeholder="Numero 1" name="numero2" />
+        </p>
+
+        <p>
+            <label for="nome">Numero 2:</label>
+            <input type="text" id="numero2" placeholder="Numero 2" name="numero2" />
+        </p>
+
+        <p>
+            <label for="nome">Resultado:</label>
+            <input type="text" id="resultado_soma" placeholder="Resultado" name="resultado_soma" />
+        </p>
+        
+        <p>
+            <input type="button" value="Calcular" onclick="somador()">
+        </p>
+
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <form name="seu_form">
+        <h1>Entre com os valores para que seja aplicado o desconto</h1>
+        <p>
+            <label for="nome">Valor:</label>
+            <input type="text" id="valor" placeholder="Valor do Produto" name="valor" />
+        </p>
+
+        <p>
+            <label for="nome">Desconto (%):</label>
+            <input type="text" id="perc_desconto" placeholder="Desconto (%)" name="perc_desconto" />
+        </p>
+
+        <p>
+            <label for="nome">Total do desconto:</label>
+            <input type="text" id="tot_desconto" placeholder="Total do desconto" name="tot_desconto" />
+        </p>
+
+        <p>
+            <input type="button" value="Calcular" onclick="calculadora()">
+        </p>
+
+    </form>
+
+</body>
+</html>
